@@ -24,6 +24,9 @@ jobs:
     - name: Install dependencies
       run: pip install -r scripts/requirements.txt
 
+    - name: List files in the repository
+      run: ls -R
+
     - name: Fetch latest LLMs list
       run: python scripts/fetch_llms_list.py
 
